@@ -1,0 +1,748 @@
+@charset "UTF-8";
+* {
+	margin: 0%;
+	padding: 0%;
+	}
+
+body {
+	background-color: #FFFFFF;
+}
+
+:focus {
+  outline-color: red;
+  outline-style: solid;
+  outline-width: thick;
+}
+
+
+/*---------------------------SLIDESHOW START----------------------------------*/
+.slides {
+	  display:none;
+	}
+
+.section {
+            bottom: 0;
+        }
+.section img{
+	width: 100%;
+	height: 10%;
+	}
+/*SLIDESHOW SLUTT*/
+
+/*----------------------------NAVBAR START ------------------------*/
+/* -------- DETTE HAR JEG LAGT INN 3. DESEMBER ----------*/
+/* QR-faktura logoen*/
+.logo {
+	width: 8em;
+	height: auto;
+}
+
+/* Språkflaggene */
+.flagg {
+	width: 2.5em;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Dette er den ytre diven av navbaren */
+.navbar {
+	background-color: rgb(228, 236, 253);
+	padding: 0;
+	margin-bottom: 5%;    								/* 03.12 - MITCH */
+	display: flex;
+	justify-content: center;
+    position: sticky;
+	position: -webkit-sticky; /* Safari */
+	top: 0;
+}
+
+/* Her ligger elementene som navbaren inneholder */
+.innhold {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: exo, sans-serif;
+	font-size: 1.8em;
+	font-size: 1.7vw;
+	text-transform: uppercase;
+
+}
+
+.meny {
+	padding: 0.775em 4.15em;
+	margin: 0;
+  }
+  
+  .logo {
+	padding: 0.31em 0.7em;
+  }
+
+.flagg {
+  padding: 0.2em 0.75em;
+}
+
+.meny, .flagg, .logo {
+  border: 1px solid rgb(52, 76, 112);	
+}
+
+.omoss, .logo, .lang {
+	display: flex;
+}
+/* Formatteringen på lenkene + legger på farge så den ikke er blå */
+
+a {
+	text-decoration: none;
+	color: #0056A6;
+}
+
+/*Active på aktiv side*/
+
+
+/*Hover på lenkene i navbaren*/
+.navbar a:hover, .flagg a:hover, .logo:hover {
+  background-color: white;
+  color: rgb(0, 86, 166);
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+}
+
+.navbar a.active {
+  background-color: rgb(52, 76, 112);
+  color: white;
+}
+
+.logo.active{
+  background-color: rgb(52, 76, 112);
+}
+
+.lang a.active{														/*	03.12 - MITCH */
+ background-color: rgb(228, 236, 253);
+-webkit-box-shadow: inset 31px -33px 41px -38px rgba(52,76,112,1);
+-moz-box-shadow: inset 31px -33px 41px -38px rgba(52,76,112,1);
+box-shadow: inset 31px -33px 41px -38px rgba(52,76,112,1);
+}
+
+/*-------- NY MOBILKODE MÅ SKRIVES -------*/
+
+/* På skjermer mindre enn 769px*/
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 12em;
+    height: auto;
+    padding: 1em 1em;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flagg {
+    width: 3em;
+    height: auto;
+    padding: 0.5em 1.675em;
+  }
+  .innhold {
+    flex-direction: column;
+    font-size: 175%;
+    width: 100%;
+
+  }
+  .meny, .flagg {
+    border: none;
+    border-bottom: 1px solid #0056A6;
+  }
+  .navbar {
+    position: static;
+    width: 100%;
+  }
+}
+
+/*------------------------------NAVBAR SLUTT--------------------------*/
+
+   
+/*Styling til hoved-tekster- og elementer på alle sider*/
+
+div.tekst1 {
+	width: 75%;
+	margin: auto;
+	margin-bottom: 30px;						
+}
+
+.p {
+	font-size: 1.3em;
+	font-size: 1.4vw;
+	font-family:exo, sans-serif;
+	font-weight: normal;
+	line-height: 155%;
+	padding-top: 10px;
+	margin: 0%;
+	}
+.f {
+	font-size: 100%;
+	font-family:exo, sans-serif;
+	background-color: #FFF;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	}
+h4 {
+	font-family:exo, sans-serif;
+	font-weight: 600;
+	font-size: 1.8em;
+	font-size: 2vw;
+	color: rgb(0, 86, 166);
+	padding-top: 40px;
+	margin: 0%;
+}
+h3 {
+	font-family: exo, sans-serif;
+	font-weight: 600;
+	font-size: 2.7em;
+	font-size: 3.8vw;
+	text-align: center;
+	color: rgb(0, 86, 166);
+	margin-bottom: 30px;
+	padding-top: 40px;
+	}
+p {
+    font-size: 1vw;
+	font-size: 1em;
+	}
+
+/* BAKGRUNN TIL INNHOLD FORSKJELLIGE DIVER */
+.bakgrunn {
+	background-color: rgb(244, 248, 255);
+	width: 100%;
+	padding: 1.5% 0% 1%;
+	}
+#cookie {
+	margin-top: 4%;
+	margin-bottom: 2%;
+	}
+#cookie_mobil img{
+	width: 90%;
+	height: auto;
+	margin: 5% auto;
+	}
+#hide {
+	display: none;
+	}
+
+	.designfelt video {
+		width: 40%;
+		cursor: pointer;
+		}
+
+/* Styling av hoved-tekster slutter*/
+
+
+/*------------------------------PROBLEM.HTML starter--------------------------*/
+.diagram {
+	width: 70%;
+	margin:0% auto;
+	}
+.diagram img {
+	height: auto;
+	width: 100%;
+	margin-bottom: 5%;
+	}
+/*PROBLEM.HTML slutter*/
+
+
+/*------------------------------LOSNING.HTML starter--------------------------*/
+ 
+/*----------Design Felt OG telefonbilder------------*/
+
+.Designfelt, .designfelt {
+    background-image: url(bilder/Blurbackground2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+
+.try_bilder img {
+	margin:0px 1%;
+	}
+
+.telefonv {
+	display: none;
+	}
+
+.designfeltLosning {
+	
+	margin-top: 4%;
+	margin-bottom:3%;
+	background-image: url(bilder/Blurbackground2.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	height: auto;
+	}
+
+.designfeltLosning img {
+	width:40%;
+	height: auto;
+	}
+
+.bilderlosning img{
+	width: 25%;
+	padding-left: 5%;
+	margin-right: auto;
+	float:right;
+	margin-top: 0%;
+	}
+
+#tlf2 img {
+	margin-top: -4%;
+	}
+
+#tlf1 img  {
+	margin-top: 7%; /* Setter telfon "AvtaleGiro" sin posisjon */
+	}
+
+#phone { /* Setter teksten "Etter inntastningen..." til 70% width slik at den ikke går under telefonbilde */
+	width: 70%;
+	display: block;
+	}
+
+/*Design Felt OG telefonbilder slutter*/
+
+
+/*---------DESIGNFELT 2 iphone slides (alle appbilder)-----------*/
+.Designfelt2{
+	background-image: url(bilder/Blurbackground2.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-bottom: 1%;
+	padding-top: 2%;
+	margin-top: 7%;
+	}
+
+.Designfelt2 #bilde1 {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	}
+
+.Designfelt2 #bilde2 {
+	display: none;
+	}
+
+.frase2 { /* Styling til teksten under "alle appbilder" med teksten "Så enkelt er det å betale med QR" */
+	font-size: 160%;
+	padding: 2% 0% 1%;
+	margin: auto;
+	font-weight:900;
+	color: rgb(255, 255, 255);
+	font-family: 'exo', sans-serif;
+	text-align:center;
+        text-shadow: 0px 0px 9px black;
+        
+	}
+/*DESIGNFELT 2 iphone slides (alle appbilder) slutter*/
+
+
+
+/*------------------------------PROBLEM.HTML starter--------------------------*/
+
+/*---------FRASE MED BILDER starter-----------*/
+.containerr {
+	width: 100%;
+	padding-top: 5%;
+	background-color: rgb(52, 76, 112);
+	float: right; 
+	margin-top: 5%;
+	margin-bottom: 8%;
+	} 
+#image{
+	width: 35%;
+	float: right;
+	padding: 0%;
+	margin: 0%;
+	}
+.frase{
+	font-family: 'exo', sans-serif;
+	color: rgb(255,255,255);
+	margin-left: 15%;
+	float: left;
+	width: 33%;
+	padding: 1%;
+	border-radius: 3px;
+	text-align: left;
+	}    
+
+#frasetitle{
+	color: rgb(255,255,255);
+	}
+/*FRASE MED BILDER slutter*/
+
+
+
+
+/*------------------------------OM.HTML starter--------------------------*/  
+
+
+/* ----------------------- SKJEMAET / THE FORM Starter---------------- */
+
+/* background-bilde hentet 07.11.2017 fra:
+ http://www.belmarwire.com/images/thinkstockphotos-stk309038rkn.jpg?crc=4252709917 */
+
+.formcontainer{
+	background-image: url("bilder/office.jpg");		/* 03.12 - MITCH, ALT ENDRET START */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 5%;
+	margin-top: 8%;
+	background-size: cover;
+	background-position: right;
+	}
+
+  /* HEADER */
+#formtitle{
+	color: rgb(52, 76, 112);
+	text-shadow: 2px 3px 10px #FFFFFF;
+	} 	
+
+  /* FRAME AROUND FORM/SKJEMA  */
+.contactForm{
+	margin-right: 17%;
+	margin-left: 17%;
+	}
+
+/* TEXT DESIGN INSIDE FORMS */
+input[type=text] {							
+	width: 75%;
+	padding: 2%;
+	font-family: josefin-sans, sans-serif;
+	font-size: 20px;
+	background: rgb(255, 255, 255);
+	border: 1px solid rgba(0, 86, 166, 0.2);
+	border-radius: 2px;
+	}
+
+input::placeholder, textarea::placeholder {
+	font-family: josefin-sans, sans-serif;
+	font-size: 20px;
+	font-style: oblique;
+	color: rgba(107, 107, 107, 0.5);
+	}
+
+textarea {
+	margin-top: 1%;
+	width: 95%;
+	height: 150px;
+	padding: 2%;
+	background: rgb(255, 255, 255);
+	border: 1px solid rgba(0, 86, 166, 0.2);
+	border-radius: 2px;
+	font-size: 20px;
+	font-family: josefin-sans, sans-serif;
+	resize: none;
+	}
+
+/* BUTTON / KNAPPEN */
+input[type=submit]{
+	margin-top: 3%;
+	margin-bottom: 5%;
+	background: rgb(52, 76, 112);
+	border: none;
+	border-radius: 2px;
+	color: rgb(255, 255, 255);
+	font-family: josefin-sans, sans-serif;
+	font-size: 20px;
+	padding: 2% 5%;
+	text-decoration: none;
+	cursor: pointer;						
+	}
+
+/* HOVER PÅ SEND KNAPPEN */	
+input[type=submit]:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.9;
+}											/* 03.12 - MITCH, ALT ENDRET SLUTT */
+
+/*SKJEMAET / THE FORM slutter */
+
+
+/*Styling til alle sider slutter */
+
+
+/*--------------------------MOBILVERSJON TIL ALT INNHOLD starter--------------------------*/
+
+	@media only screen and (max-width:768px) {
+		div.tekst1 {
+			width: 90%;
+		}
+		.designfelt video {
+			width: 100%;
+		}
+		.diagram img {
+			width: 100%;
+			margin:5% 0px;
+		}
+		.p{
+			font-size: 2.1em;
+			font-size: 5vw;
+		}
+
+		h4 {
+			font-size: 2.6em;
+			font-size: 6vw;
+		}
+		h3 {
+			font-size: 2.8em;
+			font-size: 7vw;
+		}
+		p{
+			font-size: 2.1em;
+			font-size: 5vw;
+		}
+
+		#image {
+			display: inline-block;
+			width: 68%;
+			float: right;
+			padding: 0%;
+			margin: 2% 0% 0%;
+		}
+		.frase {
+			width: 100%;
+			text-align: center;
+			margin: auto;
+			padding: 0%;
+		}
+		.frase .p {
+			margin: 0 40px;
+		}
+		.contactForm {
+			margin:0% 3%;
+		}
+		input[type=submit] {
+			margin:20px auto 0px;
+			display: block;
+			font-size: 5vw;
+		}
+		.diagram {
+			width: 100%;
+		}
+		 .name {
+			font-size: 1.4em;
+			font-size: 4vw;
+		}
+		.bilderlosning, .bilderlosning1 {
+			display: none;
+		}
+		#phone {
+			width: 100%;
+		}
+		.telefonv {
+			display: block;
+			width: 100%;
+			margin-top:5%;
+		}
+		.telefonv img {
+			height: 450px;
+			margin:4em auto;
+			display: block;
+		}
+		.designfeltLosning img {
+			width: 90%;
+			display: block;
+			margin: auto;
+			padding:8% 0%;
+		}
+		.Designfelt2 img {
+			width: 100%;
+			display: block;
+			margin: auto;
+		}
+		.Designfelt2 #bilde1 {
+			display: none;
+		}
+		.Designfelt2 #bilde2 {
+			display: block;
+		}
+		.frase2 {
+			margin:10% 0%;
+		}
+		.try_bilder img {
+			margin:3% 0%;
+		}
+		.bakgrunn {
+			padding:4% 0px;
+		}
+		.formcontainer{
+			background-attachment: inherit;
+			background-position: right;
+			}
+	}
+
+/*MOBILVERSJON TIL HOVEDINNHOLD slutter*/
+
+/*--------------------------CSS TIL FOOTER starter--------------------------*/
+
+/* MAIN FOOTER CONTAINER  1.Desember - av Are)*/
+.totop {
+	height: 63px;
+	z-index: 300;
+	width: 100%;
+	text-align: center;
+	margin-top: 5%;    
+	}
+
+.totop a {
+	cursor: pointer;
+	}
+
+.totop img {
+	margin: auto;
+	width: 60px;
+	}
+
+.totop img:hover {
+	content: url(bilder/pil_hover.png);
+	width: 60px;
+	cursor: pointer;
+	}
+
+#toppen {
+	font-family:exo, sans-serif;
+	text-shadow: 0px 0px 9px #FFFFFF;
+	font-size: 150%;
+	color: rgb(52, 76, 112);
+	text-transform: uppercase;
+    font-weight: 900; 
+    border-top: solid 2px;
+    border-left: solid 4px;
+    border-right: solid 4px;
+    padding: 0.2em;
+	}
+
+.container {
+	display: flex;
+	width: 100%;
+	height: 11em;
+	background-color: rgb(52, 76, 112);
+	bottom: 0%;
+	font-size: 1.2em;
+	font-size: 1.8vw;
+	}
+.container p, ul, li a {
+	color: #FFFFFF;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: source-sans-pro, sans-serif;
+	}
+.header {
+	color: rgb(99, 207, 249);
+	font-family: exo, sans-serif;
+	font-weight: 500;
+	margin-bottom: 1%;
+	padding: 0%;
+	margin-top: 0px;
+	}
+.contact-box { 
+	margin: auto;
+	margin-top: 25px;
+	height: auto;
+	}
+.box li{
+	margin-top: 1em;
+	font-size: 0.8em;
+	}
+        
+.box li a{
+        font-weight: 600;
+        border-bottom: solid 1px;
+	}
+
+/* BORDER RUNDT IKONENE */
+.imgbox{
+	margin-top: 6%;
+	margin-right: 28%;
+	padding: 0%;  
+	display: flex; 
+	}
+.sosial img {
+	display: inline-block;
+	float: left;
+	width: 2.5em;
+	padding: 0;
+	margin-right: 1em;
+	margin-top: 2%;
+	position: relative;
+	}
+.lenker:hover{
+	color: rgb(99, 207, 249);
+	}
+.sosial img:target {
+	opacity: 0.5; 
+	}
+.sosial img:hover {
+	opacity: 0.5;
+	color: rgb(99, 207, 249); 
+	}
+
+/*--------------------------MOBILVERSJON TIL FOOTER starter--------------------------*/
+	@media only screen and (max-width:768px) {
+		.container {
+			margin:0px auto;
+			padding-top: 20%;
+			padding-top: 0px;
+			width: auto;
+			display: block;
+			height: auto;
+			font-size: 5em;
+			font-size: 5vw;
+		}
+		.sosial {
+			margin: auto;
+			padding: auto;
+			width: auto;
+		}
+		.imgbox {
+			margin: auto;
+			width: auto;
+			padding-top: 20px;
+			padding-left: 15%;
+			padding-right: 15%;
+			padding-bottom: 50px;
+		}
+		.startbox {
+			padding-left: 0%;
+		}
+		.contact-box {
+			margin: 0px;
+			padding:30px 0px;
+			width: 100%;
+		}
+		.box {
+			width: auto;
+			padding-bottom: 2px;
+			margin:0% 18%;
+			text-align: center;
+		}
+		.header {
+			text-align: center;
+		}
+		.sosial img{
+			margin-right: 0%;
+		 }
+		.lenker {
+			border-bottom: thin solid;
+		}
+		.totop {
+			padding-bottom: 0px;
+		}
+	}
+/*------------------------CSS FOOTER slutter-----------------------*/

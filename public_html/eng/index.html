@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home - QR-faktura</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link href="en_stylesheet.css" rel= "stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+</head>
+<body id="top">
+<!-- SLIDESHOW START-->
+<div class="section">
+	<img class="slides" src="bilder/header2.png" alt="Header - Life is short, KIDs are long.">
+	<img class="slides" src="bilder/header1.png" alt="Header - No KIDing.">
+	<img class="slides" src="bilder/header3.png" alt="Leave those KIDs alone.">
+</div>
+
+<!--Linker til bildet i header: 
+https://www.freepik.com/free-vector/collection-of-steps-to-use-a-qr-code_
+1023243.htm#term=phone%20hand&page=2&position=37"Designed by Freepik" 7/11-17 13:34 -->
+
+ <script>
+ var index = 0;
+ karusell();
+  function karusell() {
+     var i;
+     var x = document.getElementsByClassName("slides");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+     }
+     index++;
+     if (index > x.length) {index = 1}   
+     x[index-1].style.display = "block"; 
+     setTimeout(karusell, 5000); // Bytter hvert 5 sekund
+ }
+ </script>
+<!--SLIDESHOW SLUTT -->
+
+<!-- NAVBAR START (1. DESEMBER) -->
+        
+<div class="navbar">
+  <div class="innhold">
+    
+    <a href="index.html" tabindex="1"><div><img class="logo" src="bilder/qrfaktura2.png" title="Click here to return to the main page." alt="QR Faktura logo - click here to return to the main page."></div></a> <!-- QR FAKTURA LOGO -->
+      
+    <a href="problem.html" tabindex="2"><div class="meny" title="Click here to discover the problem.">Problem</div></a> <!-- PROBLEMET -->
+      
+    <a href="losning.html" tabindex="3"><div class="meny" title="Click here to read about the solution.">Solution</div></a> <!-- LØSNINGEN -->
+    
+    <a href="om.html" tabindex="4"><div class="meny" title="Click here to contact us.">Contact</div></a> <!-- KONTAKT OSS -->
+    
+    <div class="lang"> <!-- GRUPPERING AV NO/EN FLAGG -->
+
+      <a href="../index.html" tabindex="5"><div><img class="flagg" src="bilder/no.png" Title="Click here to change language to Norwegian" alt="Norwegian flag - Show norwegian version of the webpage."></div></a> <!-- NORSK -->
+
+      <a class="active" href="index.html" tabindex="6"><div><img class="flagg" src="bilder/en.png" title="Click here to change language to English." alt="English flag - Show english version of the webpage."></div></a> <!-- ENGELSK -->
+    </div>
+    
+    </div>
+</div>
+
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> 
+from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
+is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative 
+Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> 7/11-17 12:42 -->
+
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons
+BY 3.0" target="_blank">CC 3.0 BY</a></div> 7/11-17 12:44 -->
+
+<!--NAVBAR SLUTT -->
+
+
+<div class="tekst1">
+ 
+	
+
+</body>
+</html>
